@@ -3365,6 +3365,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.253" >
+            
+                <a target="_blank" href="http://victorfengming.gitee.io/file/pdf/scala.pdf">
+            
+                    
+                    pdf课件
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -3411,6 +3424,124 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="007scala&#x5FEB;&#x901F;&#x5165;&#x95E8;">007_Scala&#x5FEB;&#x901F;&#x5165;&#x95E8;.</h1>
+<h2 id="scala-helloworld">Scala helloworld</h2>
+<p>&#x9700;&#x6C42;&#x8BF4;&#x660E;:</p>
+<p>&#x200B;    &#x8981;&#x6C42;&#x5F00;&#x53D1;&#x4E00;&#x4E2A;Hello.scala&#x7A0B;&#x5E8F;,&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&quot;hello,&#x4E16;&#x754C;!&quot;</p>
+<h3 id="window-&#x4E0B;&#x5F00;&#x53D1;&#x6B65;&#x9AA4;">window &#x4E0B;&#x5F00;&#x53D1;&#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6587;&#x672C;&#x5F00;&#x53D1;&#x5DE5;&#x5177;[editplus]</li>
+<li>&#x5C06;Scala&#x4EE3;&#x7801;&#x7F16;&#x5199;&#x5230;&#x6269;&#x5C55;&#x540D;&#x4E3A;Hello.scala&#x7684;&#x6587;&#x4EF6;&#x4E2D;[&#x8BF4;&#x660E;: Scala&#x4EE3;&#x7801;&#x7F16;&#x5199;&#x5230;&#x6269;&#x5C55;&#x540D;&#x4E3A;Hello.scala&#x7684;&#x6587;&#x4EF6;&#x4E2D;]</li>
+<li>&#x901A;&#x8FC7;scalac &#x547D;&#x4EE4;&#x5BF9;&#x8BE5; scala&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;,&#x751F;&#x6210;.class&#x6587;&#x4EF6;.[&#x548C;Javac&#x7C7B;&#x4F3C;]</li>
+<li>&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x9762; &#x6267;&#x884C; scala Hello &#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD0;&#x884C;&#x6548;&#x679C;</li>
+<li>&#x6CE8;&#x610F;: scala Hello.scala&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C; Hello.scala&#x7A0B;&#x5E8F;[&#x5185;&#x90E8;&#x4E5F;&#x4F1A;&#x6709;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;]</li>
+</ol>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5148;&#x4E0D;&#x7528;idea&#x5F00;&#x53D1;,&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5E95;&#x5C42;&#x7684;&#x7ED3;&#x6784;</p>
+<blockquote>
+<p>&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;,&#x547D;&#x540D;&#x4E3A;HelloJava.java</p>
+</blockquote>
+<p>&#x5185;&#x5BB9;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloJava</span>
+</span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;hello,java!!!&quot;</span>);
+    }
+}
+</code></pre>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x8FD0;&#x884C;</p>
+<pre><code class="lang-cmd"><span class="hljs-function">D:\<span class="hljs-title">IdeaProjects</span>\<span class="hljs-title">scala</span>\<span class="hljs-title">code</span>\<span class="hljs-title">HelloDemo</span>&gt;<span class="hljs-title">javac</span> <span class="hljs-title">HelloJava.java</span>
+
+<span class="hljs-title">D</span>:\<span class="hljs-title">IdeaProjects</span>\<span class="hljs-title">scala</span>\<span class="hljs-title">code</span>\<span class="hljs-title">HelloDemo</span>&gt;<span class="hljs-title">java</span> <span class="hljs-title">HelloJava</span>
+<span class="hljs-title">hello</span>,<span class="hljs-title">java</span>!!!
+
+<span class="hljs-title">D</span>:\<span class="hljs-title">IdeaProjects</span>\<span class="hljs-title">scala</span>\<span class="hljs-title">code</span>\<span class="hljs-title">HelloDemo</span>&gt;
+</span></code></pre>
+<hr>
+<p>&#x7136;&#x540E;,&#x5728;&#x5BF9;&#x6BD4;&#x7684;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>HelloScala.scala</code>&#x6587;&#x4EF6;,&#x5185;&#x5BB9;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">HelloScala</span></span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span></span>(args: <span class="hljs-type">Array</span>[<span class="hljs-type">String</span>]): <span class="hljs-type">Unit</span> = {
+    println(<span class="hljs-string">&quot;hello,scala!!!&quot;</span>)
+  }
+}
+</code></pre>
+<p>&#x5728;&#x7EC8;&#x7AEF;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;</p>
+<p>```shell script
+D:\IdeaProjects\scala\code\HelloDemo&gt;D:\env\scala\bin\scalac HelloScala.scala</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;D:\env\scala\bin\scala HelloScala
+hello,scala!!!</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;</p>
+<pre><code>
+
+---
+
+```scala
+// &#x8BF4;&#x660E;
+/*
+* 1. object &#x8868;&#x793A;&#x4E00;&#x4E2A;&#x4F34;&#x751F;&#x5BF9;&#x8C61;,&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x7406;&#x89E3;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+* 2. HelloScala&#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x540D;&#x5B57;,&#x4ED6;&#x5E95;&#x5C42;&#x771F;&#x6B63;&#x7684;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x540D;&#x662F;`HelloScala$`,&#x7C7B;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5BF9;&#x8C61;MODULE$
+* . &#x4F7F;&#x7528;jd-gui.exe &#x80FD;&#x591F;&#x53CD;&#x7F16;&#x8BD1; &#x5BF9;&#x5E94;&#x7684; &#x6587;&#x4EF6;(&#x4F46;&#x662F;&#x6211;&#x53EF;&#x4EE5;&#x7528;idea&#x7684;&#x63D2;&#x4EF6;&#x91CC;&#x9762;&#x770B;)
+* 3. &#x5F53;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x4E00;&#x4E2A;object HelloScala &#x5E95;&#x5C42;&#x4F1A;&#x751F;&#x6210;2&#x4E2A;.class&#x6587;&#x4EF6;,&#x5206;&#x522B;&#x662F;HelloScala&#x548C;HelloScala$
+* 4. scala&#x5728;&#x8FD0;&#x884C;&#x65F6;,&#x7684;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;
+*   4.1 &#x5148;&#x4ECE;HelloScala&#x7684;main&#x5F00;&#x59CB;&#x6267;&#x884C;
+*   4.2 &#x7136;&#x540E;&#x8C03;&#x7528;
+* */
+
+object HelloScala{
+  /*
+  * &#x8BF4;&#x660E;
+  * 1. def &#x8868;&#x793A;&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;,&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;
+  * 2. main&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x540D;&#x5B57;,&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;
+  * 3. args:Array[String]&#x8868;&#x793A;&#x5F62;&#x53C2;,scala&#x7684;&#x7279;&#x70B9;&#x662F;&#x5C06;&#x53C2;&#x6570;&#x540D;&#x5728;&#x524D;,&#x7C7B;&#x578B;&#x6807;&#x8BC6;&#x5728;&#x540E;
+  * 4. Array[String]&#x8868;&#x793A;&#x7C7B;&#x578B;&#x6570;&#x7EC4;
+  * 5. :Unit = &#x8868;&#x793A;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x7A7A;(void)
+  * 6. println(&quot;hello,scala!!!&quot;) &#x8F93;&#x51FA;&#x4E00;&#x53E5;&#x8BDD;
+  * */
+  def main(args: Array[String]): Unit = {
+    println(&quot;hello,scala!!!&quot;)
+  }
+}
+</code></pre><blockquote>
+<p>2&#x4E2A;&#x7F16;&#x8BD1;&#x51FA;&#x6765;&#x7684;class&#x6587;&#x4EF6;,&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x8FD9;&#x4E48;&#x505A;&#x5462;? </p>
+<p>&#x97F3;&#x4E3A;Scala&#x7684;&#x8BBE;&#x8BA1;&#x8005;&#x628A;&#x9759;&#x6001;&#x548C;&#x975E;&#x9759;&#x6001;&#x7684;&#x4EE3;&#x7801;&#x5206;&#x5F00;&#x4E86;</p>
+<p>&#x4ED6;&#x8BA4;&#x4E3A;&#x9759;&#x6001;&#x4E0D;&#x662F;&#x5C5E;&#x4E8E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x8303;&#x7574;</p>
+<p>&#x7136;&#x540E;&#x4ED6;&#x600E;&#x4E48;&#x53BB;&#x8868;&#x793A;&#x5462;</p>
+<p>&#x4ED6;&#x628A;&#x4E00;&#x4E2A;&#x7C7B;&#x5929;&#x7136;&#x7684;&#x5206;&#x6210;&#x4E86;2&#x90E8;&#x5206;</p>
+</blockquote>
+<hr>
+<p>&#x4E92;&#x76F8;&#x6267;&#x884C;&#x6D4B;&#x8BD5;</p>
+<p>```shell script
+D:\IdeaProjects\scala\code\HelloDemo&gt;dir
+ &#x9A71;&#x52A8;&#x5668; D &#x4E2D;&#x7684;&#x5377;&#x662F; &#x65B0;&#x52A0;&#x5377;
+ &#x5377;&#x7684;&#x5E8F;&#x5217;&#x53F7;&#x662F; A4B3-9429</p>
+<p> D:\IdeaProjects\scala\code\HelloDemo &#x7684;&#x76EE;&#x5F55;</p>
+<p>2021/03/22  14:40    <dir>          .
+2021/03/22  14:40    <dir>          ..
+2021/03/22  14:35               425 HelloJava.class
+2021/03/22  14:35               127 HelloJava.java
+2021/03/22  14:40               684 HelloScala$.class
+2021/03/22  14:40               645 HelloScala.class
+2021/03/22  15:10             1,027 HelloScala.scala
+               5 &#x4E2A;&#x6587;&#x4EF6;          2,908 &#x5B57;&#x8282;
+               2 &#x4E2A;&#x76EE;&#x5F55; 185,545,084,928 &#x53EF;&#x7528;&#x5B57;&#x8282;</dir></dir></p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;java HelloJava
+hello,java!!!</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;java HelloScala
+Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: scala/Predef$
+        at HelloScala$.main(HelloScala.scala:3)
+        at HelloScala.main(HelloScala.scala)
+Caused by: java.lang.ClassNotFoundException: scala.Predef$
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+        ... 2 more</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;java HelloScala$.class
+&#x9519;&#x8BEF;: &#x627E;&#x4E0D;&#x5230;&#x6216;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;&#x4E3B;&#x7C7B; HelloScala$.class</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;D:\env\scala\bin\scala HelloJava.class
+No such file or class on classpath: HelloJava.class</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;D:\env\scala\bin\scala HelloJava
+hello,java!!!</p>
+<p>D:\IdeaProjects\scala\code\HelloDemo&gt;</p>
+<p>```</p>
 
                                 
                                 </section>
@@ -3454,7 +3585,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Scala快速入门","level":"1.9","depth":1,"next":{"title":"idea开发Scala项目","level":"1.10","depth":1,"path":"008_idea开发Scala项目.md","ref":"008_idea开发Scala项目.md","articles":[]},"previous":{"title":"Scala插件安装","level":"1.8","depth":1,"path":"006_Scala插件安装.md","ref":"006_Scala插件安装.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"007_Scala快速入门.md","mtime":"2021-03-22T02:06:12.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-22T02:06:26.009Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Scala快速入门","level":"1.9","depth":1,"next":{"title":"idea开发Scala项目","level":"1.10","depth":1,"path":"008_idea开发Scala项目.md","ref":"008_idea开发Scala项目.md","articles":[]},"previous":{"title":"Scala插件安装","level":"1.8","depth":1,"path":"006_Scala插件安装.md","ref":"006_Scala插件安装.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"007_Scala快速入门.md","mtime":"2021-03-22T07:13:16.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-03-22T07:37:24.129Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -3462,10 +3593,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
