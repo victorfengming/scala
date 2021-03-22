@@ -67,7 +67,7 @@ object HelloScala{
 
 
 
-```shell script
+```shell
 D:\IdeaProjects\scala\code\HelloDemo>D:\env\scala\bin\scalac HelloScala.scala
 
 D:\IdeaProjects\scala\code\HelloDemo>D:\env\scala\bin\scala HelloScala
@@ -123,7 +123,7 @@ object HelloScala{
 
 
 
-```shell script
+```shell
 D:\IdeaProjects\scala\code\HelloDemo>dir
  驱动器 D 中的卷是 新加卷
  卷的序列号是 A4B3-9429
