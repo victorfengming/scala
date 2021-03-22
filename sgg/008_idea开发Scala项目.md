@@ -1,1 +1,1 @@
-# 008_idea开发Scala项目.
+# 008_idea开发Scala项目
