@@ -25,6 +25,7 @@ object Demo02 {
     val num3 = 1
 //    val char2:Char = num3// 报错
     // 常量可 可以赋值,变量不中
+
   }
 
 }
