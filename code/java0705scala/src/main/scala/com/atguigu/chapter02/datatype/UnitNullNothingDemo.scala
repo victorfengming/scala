@@ -29,7 +29,7 @@ object UnitNullNothingDemo {
   }
 
   val dog: Dog = null
-  val char1: Char = null
+  //  val char1: Char = null
   println("ok~~~")
 
 
