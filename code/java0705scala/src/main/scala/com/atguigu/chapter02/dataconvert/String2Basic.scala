@@ -1,8 +1,3 @@
-# 025_值类型与String相互转换
-
-![image-20210323142402221](025_%E5%80%BC%E7%B1%BB%E5%9E%8B%E4%B8%8EString%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/image-20210323142402221.png)
-
-```scala
 package com.atguigu.chapter02.dataconvert
 
 object String2Basic {
@@ -35,12 +30,3 @@ object String2Basic {
   }
 
 }
-```
-
-### 注意事项
-
-1. 在将String类型转换成基本数据类型时,**要确保String类型能够转成有效的数据**,比如我们可以把"123",转成一个整数,但是不能吧"hello"转成一个整数
-2. 思考就是要把"12.5"转成Int //?
-
-> 有些人可以通过报出来的异常来判断你输入的数是不是我想要的类型
-
