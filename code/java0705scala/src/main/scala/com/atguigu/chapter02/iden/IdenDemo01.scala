@@ -48,7 +48,7 @@ object IdenDemo01 {
     val Int = 90.45
     println("int="+Int)
     // 不能使用_ 作为标识符
-    var _ = "jack"  // 报错missing parameter type for expanded function ((<x$2: error>) => println(x$2))
-    println(_)
+//    var _ = "jack"  // 报错missing parameter type for expanded function ((<x$2: error>) => println(x$2))
+//    println(_)
   }
 }
