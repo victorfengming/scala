@@ -1,10 +1,3 @@
-# 019_Scala字符类型
-
-![image-20210323103607551](019_Scala%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B/image-20210323103607551.png)
-
-![image-20210323103616460](019_Scala%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B/image-20210323103616460.png)
-
-```scala
 package com.atguigu.chapter02.datatype
 
 /**
@@ -43,7 +36,7 @@ object CharDemo {
     var c4: Char = 98
     var c5: Char = 298
     var c6: Char = 999
-    var c7: Char = 99999// 这个就不成了
+    //    var c7: Char = 99999// 这个就不成了
     /*
     * type mismatch;
  found   : Int(99999)
@@ -53,13 +46,3 @@ object CharDemo {
   }
 
 }
-```
-
-```cmd
-char1=a
-num=107
-
-Process finished with exit code 0
-```
-
-![image-20210323104454885](019_Scala%E5%AD%97%E7%AC%A6%E7%B1%BB%E5%9E%8B/image-20210323104454885.png)
