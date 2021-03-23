@@ -14,7 +14,7 @@ object Demo01 {
     val res = {
       if (num > 3) "hello,ok" else 100
     }
-    println("res="+res)
+    println("res=" + res)
 
     /**
      * num=1
@@ -22,6 +22,15 @@ object Demo01 {
      *
      * Process finished with exit code 0
      */
+
+
+    // 有2个变量,要求将其进行交换,但是并不予许使用中间变量,最终打印结果
+    var a = 10
+    var b = 20
+    a = a + b
+    b = a - b
+    a = a - b
+    // 这样就成了
   }
 
 }
