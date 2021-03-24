@@ -1,12 +1,3 @@
-# 048_多重循环应用案例
-
-### 介绍
-
-![image-20210324101042507](048_%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B/image-20210324101042507.png)
-
-![image-20210324101303180](048_%E5%A4%9A%E9%87%8D%E5%BE%AA%E7%8E%AF%E5%BA%94%E7%94%A8%E6%A1%88%E4%BE%8B/image-20210324101303180.png)
-
-```scala
 package com.atguigu.chapter04.mutlfor
 
 /**
@@ -80,65 +71,3 @@ object Exercise01 {
   * */
 
 }
-
-```
-
-
-
-```scala
-package com.atguigu.chapter04.mutlfor
-
-import scala.io._
-
-object Exercise02 {
-  def main(args: Array[String]): Unit = {
-    //2.统计三个班及格人数，每个班有5名同学。
-    val classNum = 3
-    val stuNum = 5
-    var score = 0.0 //分数
-    var classScore = 0.0 //班级的总分
-    var totalScore = 0.0 //所有班级总分
-    var passNum = 0 //统计及格人数
-    for (i <- 1 to classNum) {
-      //先将 classScore 清0
-      classScore = 0.0
-      for (j <- 1 to stuNum) {
-        printf("请输入第%d班级的第%d个学生的成绩\n", i, j)
-        score = StdIn.readDouble()
-        if (score >= 60) {
-          passNum += 1
-        }
-        classScore += score
-      }
-      //累计 totalScore
-      totalScore += classScore
-      printf("第%d班级的平均分为%.2f\n", i, classScore / stuNum)
-    }
-    printf("所有班级的平均分为%.2f", totalScore / (stuNum * classNum))
-    printf("所有班级的及格人数为%d", passNum)
-  }
-}
-
-```
-
-```scala
-package com.atguigu.chapter04.mutlfor
-
-object Exercise03 {
-  def main(args: Array[String]): Unit = {
-    //3.打印出九九乘法表
-    //思路分析
-    //(1) 使用两层循环, 有9行, 每1行的列数在增加
-    //(2) 根据逻辑，我们可以编写代码
-    val num = 9
-    for (i <- 1 to num) { //确定行数
-      for (j <- 1 to i) {//确定列数
-        printf("%d * %d = %d\t" , j , i , i * j)
-      }
-      println()
-    }
-  }
-}
-
-```
-

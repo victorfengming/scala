@@ -1,6 +1,3 @@
-# 050_循环中断作业评讲
-
-```scala
 
 import util.control.Breaks._
 
@@ -37,7 +34,7 @@ object Homework01 {
       }
       println("i=" + i)
     }
-    
+
     /*
     * 第一次大于20的当前数=6
     ===========================
@@ -48,11 +45,8 @@ object Homework01 {
     i=5
     循环守卫实现中断 第一次大于20的当前数=6
     i=6
-    
+
     Process finished with exit code 0
     * */
   }
 }
-
-```
-
