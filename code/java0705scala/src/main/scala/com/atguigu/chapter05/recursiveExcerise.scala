@@ -1,20 +1,3 @@
-# 057_函数递归的课堂练习_
-
-
-
-![1616681285933](057_%E5%87%BD%E6%95%B0%E9%80%92%E5%BD%92%E7%9A%84%E8%AF%BE%E5%A0%82%E7%BB%83%E4%B9%A0/1616681285933.png)
-
-
-
-![1616681411153](057_%E5%87%BD%E6%95%B0%E9%80%92%E5%BD%92%E7%9A%84%E8%AF%BE%E5%A0%82%E7%BB%83%E4%B9%A0/1616681411153.png)
-
-
-
-
-
-
-
-```scala
 package com.atguigu.chapter05
 
 /**
@@ -99,6 +82,3 @@ object Exercise01 {
    * Process finished with exit code 0
    * */
 }
-
-```
-
