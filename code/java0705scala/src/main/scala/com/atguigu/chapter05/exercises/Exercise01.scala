@@ -1,8 +1,3 @@
-# 064_函数练习题
-
-![1616913228979](064_%E5%87%BD%E6%95%B0%E7%BB%83%E4%B9%A0%E9%A2%98/1616913228979.png)
-
-```scala
 package com.atguigu.chapter05.exercises
 
 import scala.io.StdIn
@@ -26,5 +21,3 @@ object Exercise01 {
     }
   }
 }
-```
-
