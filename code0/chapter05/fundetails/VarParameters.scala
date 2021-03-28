@@ -16,10 +16,11 @@ object VarParameters {
     }
     sum
   }
+
   //可变参数需要放在最后
-//  def sum2(args: Int*,n1: Int): Int = {
-//    1
-//  }
+  //  def sum2(args: Int*,n1: Int): Int = {
+  //    1
+  //  }
 
   def test(): Unit = { //过程
 
