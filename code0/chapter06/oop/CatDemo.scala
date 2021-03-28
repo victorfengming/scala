@@ -49,11 +49,11 @@ public class Cat
 }
  */
 
-class Dog{
+class Dog {
   var name = "jack"
   var lover = new Fish
 }
 
-class Fish{
+class Fish {
 
 }
