@@ -8,6 +8,7 @@
     "gitbook-plugin-lightbox": "^1.2.0",
     "gitbook-plugin-lunr": "^1.2.0",
     "gitbook-plugin-pageview-count": "^1.0.1",
-    "gitbook-plugin-splitter": "^0.0.8"
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-valine": "^0.0.4"
   }
 }
