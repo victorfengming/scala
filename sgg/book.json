@@ -1,62 +1,61 @@
 {
-  "title": "Scala",
-  "description": "Scala,新一代内存级大数据计算框架",
+  "title": "scala",
+  "description": "scala,新一代内存级大数据计算框架",
+  "author": "Victor <victorfengming@163.com>",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "root": "./src",
+  "links": {
+    "sidebar": {
+      "文档索引页": "https://victorfengming.gitee.io/index/gitbook/"
+    }
+  },
+  "plugins": [
+    "code",
+    "valine",
+    "hide-element",
+    "chapter-fold",
+    "expandable-chapters",
+    "favicon",
+    "lightbox",
+    "splitter",
+    "-lunr",
+    "pageview-count",
+    "ancre-navigation",
+    "-search",
+    "search-plus",
+    "-highlight",
+    "popup",
+    "prism",
+    "prism-themes",
+    "-sharing",
+    "sharing-plus",
+    "tbfed-pagefooter",
+    "toolbar-button"
+  ],
   "pluginsConfig": {
-    "autocover": {
-      "title": "Scala"
-    },
-    "github-buttons": {
-      "buttons": [
-        {
-          "repo": "gitbook_demo",
-          "user": "crifan",
-          "type": "star",
-          "count": true,
-          "size": "small"
-        },
-        {
-          "user": "crifan",
-          "type": "follow",
-          "width": "120",
-          "count": false,
-          "size": "small"
-        }
-      ]
-    },
-    "sitemap-general": {
-      "prefix": "https://book.crifan.com/gitbook/gitbook_demo/website/"
-    },
     "toolbar-button": {
-      "url": "http://book.crifan.com/books/gitbook_demo/pdf/gitbook_demo.pdf",
+      "url": "https://victorfengming.gitee.io/scala/",
       "icon": "fa-file-pdf-o",
       "label": "下载PDF"
-    },
-    "google-adsense": {
-      "ads": [
-        {
-          "client": "ca-pub-6626240105039250"
-        }
-      ]
-    },
-    "callouts": {
-      "showTypeInHeader": false
-    },
-    "theme-default": {
-      "showLevel": true
     },
     "prism": {
       "css": [
         "prism-themes/themes/prism-atom-dark.css"
       ]
     },
+    "valine": {
+      "appId": "CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz",
+      "appKey": "nWerbwV2WMAxOEmAMkJKvXzs"
+    },
+    "favicon": {
+      "shortcut": "./img/avator.png.icon.ico",
+      "bookmark": "./img/avator.png.icon.ico"
+    },
     "hide-element": {
       "elements": [
         ".gitbook-link"
       ]
-    },
-    "valine": {
-      "appId": "CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz",
-      "appKey": "nWerbwV2WMAxOEmAMkJKvXzs"
     },
     "sharing": {
       "douban": false,
@@ -99,52 +98,6 @@
       "copyright": "victorfengming.gitee.io，使用<a href='https://creativecommons.org/licenses/by/4.0/deed.zh'>署名4.0国际(CC BY 4.0)协议</a>发布",
       "modify_label": "最后更新：",
       "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "donate": {
-      "wechat": "https://www.crifan.com/files/res/crifan_com/crifan_wechat_pay.jpg",
-      "alipay": "https://www.crifan.com/files/res/crifan_com/crifan_alipay_pay.jpg",
-      "title": "",
-      "button": "打赏",
-      "alipayText": "支付宝打赏给Crifan",
-      "wechatText": "微信打赏给Crifan"
     }
-  },
-  "author": "Victor <victorfengming@163.com>",
-  "language": "zh-hans",
-  "gitbook": "3.2.3",
-  "root": "./src",
-  "links": {
-    "sidebar": {
-      "Index": "https://victorfengming.gitee.io/index/gitbook/"
-    }
-  },
-  "plugins": [
-    "code",
-    "valine",
-    "pageview-count",
-    "hide-element",
-    "google-adsense",
-    "theme-comscore",
-    "anchors",
-    "-lunr",
-    "-search",
-    "search-plus",
-    "-highlight",
-    "popup",
-    "prism",
-    "prism-themes",
-    "github-buttons",
-    "splitter",
-    "-sharing",
-    "sharing-plus",
-    "tbfed-pagefooter",
-    "expandable-chapters-small",
-    "favicon",
-    "donate",
-    "sitemap-general",
-    "copy-code-button",
-    "callouts",
-    "toolbar-button",
-    "ancre-navigation"
-  ]
+  }
 }
